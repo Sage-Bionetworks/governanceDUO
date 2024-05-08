@@ -27,7 +27,7 @@
           "_accessRequirementIds": {
             "type": "array",
             "contains": {
-              "const": null
+              "const": []
             }
           }
         }
