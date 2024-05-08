@@ -21,16 +21,6 @@
             }
           }
         }
-      },
-      "else": {
-        "properties": {
-          "_accessRequirementIds": {
-            "type": "array",
-            "contains": {
-              "const": []
-            }
-          }
-        }
       }
     }
   ]

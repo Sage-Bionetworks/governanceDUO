@@ -17,7 +17,17 @@
           "_accessRequirementIds": {
             "type": "array",
             "contains": {
-              "const": 1231234
+              "const": 9606400
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "_accessRequirementIds": {
+            "type": "array",
+            "contains": {
+              "const": null
             }
           }
         }

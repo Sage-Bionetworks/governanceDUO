@@ -2,6 +2,7 @@ import asyncio
 from synapseclient.models import Project, File
 import synapseclient
 import json
+import os
 
 import yaml
 
@@ -22,11 +23,13 @@ def main():
         with open(configuration['filepath'], 'r') as f:
             example_schema = json.load(f)
         # Create a new JSON schema version for an existing organization
-        schema_name = configuration['filepath']
+        schema_name = os.path.basename(configuration['filepath']).replace(".json", '').replace("_", '.')
         # TODO: need to figure out only pushing new schemas
+        print(example_schema)
+        print(schema_name)
         new_version1 = my_org.create_json_schema(example_schema, schema_name)
-
-        synapse_id = configuration['synapse_id'],
+        print(new_version1.uri)
+        synapse_id = configuration['synapse_id']
         request_body = {
             "entityId": synapse_id,
             "schema$id": new_version1.uri,
