@@ -7,8 +7,14 @@
     {
       "if": {
         "properties": {
-          "IRB": {
-            "const": true
+          "duoCodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "contains": {
+              "const": "IRB"
+            }
           }
         }
       },
