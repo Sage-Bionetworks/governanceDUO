@@ -10,7 +10,7 @@ import yaml
 def main():
     """Invoke adding DUO schema bindings"""
     syn = synapseclient.Synapse()
-    syn.setEndpoints(**synapseclient.client.STAGING_ENDPOINTS)
+    # syn.setEndpoints(**synapseclient.client.STAGING_ENDPOINTS)
     syn.login()
     with open("config.yml", "r") as f:
         config = yaml.safe_load(f)
