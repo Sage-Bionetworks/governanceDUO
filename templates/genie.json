@@ -27,13 +27,28 @@
             }
           }
         }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "duoCodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "contains": {
+              "const": "HMB"
+            }
+          }
+        }
       },
-      "else": {
+      "then": {
         "properties": {
           "_accessRequirementIds": {
             "type": "array",
             "contains": {
-              "const": null
+              "const": 234234234
             }
           }
         }
