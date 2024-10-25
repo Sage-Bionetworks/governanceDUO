@@ -9,6 +9,13 @@ _*ARs are applied in the form of a clickwrap (i.e., the user must agree to terms
 
 Learn more about [metadata structures](metadata_structure.md)
 
+## PoC
+
+The `add_duo_schema_bindings.py` is a proof-of-concept for how to add DUO schema bindings to Synapse projects. The script reads a configuration file (`config.yml`) that specifies the Synapse project ID and the DUO schema ID to bind to that project. The script then binds the specified DUO schema to the specified Synapse project or folder.
+
+What's expected is the annotation key "duoCodes" and the codes can be found here: https://github.com/mc2-center/data-models/blob/main/modules/shared/duo.csv.
+
+
 # Resources
  - [EBISPOT DUO](https://github.com/EBISPOT/DUO/blob/master/README.md)
  - [Extension of Data Access Management](https://sagebionetworks.jira.com/wiki/spaces/PLFM/pages/2597617665/API+Changes+to+support+Extension+of+Data+Access+Management+to+Users+outside+of+Sage+ACT)
