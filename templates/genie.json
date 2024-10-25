@@ -23,7 +23,7 @@
           "_accessRequirementIds": {
             "type": "array",
             "contains": {
-              "const": 9606400
+              "const": 9606538
             }
           }
         }
@@ -48,7 +48,7 @@
           "_accessRequirementIds": {
             "type": "array",
             "contains": {
-              "const": 234234234
+              "const": 9606537
             }
           }
         }
